@@ -9,8 +9,8 @@
             <connections>
                 <outlet property="billTextField" destination="cMe-U4-rca" id="S6e-6u-2k3"/>
                 <outlet property="tipControl" destination="KAg-70-0TG" id="QAD-6I-RBy"/>
-                <outlet property="tipLabel" destination="1" id="ONs-Dx-Gym"/>
-                <outlet property="totalLabel" destination="LhX-xu-G9b" id="tkm-2B-BxW"/>
+                <outlet property="tipLabel" destination="E2i-vk-6QP" id="lpt-qp-mEl"/>
+                <outlet property="totalLabel" destination="LhX-xu-G9b" id="iDO-mT-EXS"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -33,7 +33,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$3.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2i-vk-6QP">
-                    <rect key="frame" x="252" y="96" width="43" height="21"/>
+                    <rect key="frame" x="212" y="96" width="83" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
@@ -50,13 +50,13 @@
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUT-yA-w3l">
-                    <rect key="frame" x="20" y="171" width="42" height="21"/>
+                    <rect key="frame" x="20" y="171" width="54" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$3.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhX-xu-G9b">
-                    <rect key="frame" x="253" y="171" width="43" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$3.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhX-xu-G9b">
+                    <rect key="frame" x="212" y="171" width="84" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
@@ -69,6 +69,9 @@
                         <segment title="15%"/>
                         <segment title="20%"/>
                     </segments>
+                    <connections>
+                        <action selector="onTap:" destination="-1" eventType="valueChanged" id="mnd-Zi-bYV"/>
+                    </connections>
                 </segmentedControl>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

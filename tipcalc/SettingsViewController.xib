@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController">
             <connections>
+                <outlet property="defaultTipControl" destination="1fi-p1-enW" id="gz5-sD-5hA"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -30,11 +31,15 @@
                         <segment title="15%"/>
                         <segment title="20%"/>
                     </segments>
+                    <connections>
+                        <action selector="onChange:" destination="-1" eventType="valueChanged" id="i7R-W8-iBf"/>
+                    </connections>
                 </segmentedControl>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
+        <tapGestureRecognizer id="KeV-sj-9Tu"/>
     </objects>
 </document>

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingsViewController : UIViewController
-
+extern NSString * const DEFAULT_TIP;
 @end
