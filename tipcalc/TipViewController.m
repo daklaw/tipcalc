@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
 
 - (IBAction)onTap:(id)sender;
+- (void)initializeValues;
 - (void)updateValues;
 - (void)onSettingsButton;
 @end

@@ -10,7 +10,9 @@
 
 @interface SettingsViewController ()
 @property (weak, nonatomic) IBOutlet UISegmentedControl *defaultTipControl;
+
 - (IBAction)onChange:(id)sender;
+- (void)initializeValues;
 
 @end
 
@@ -31,7 +33,7 @@ NSString *const DEFAULT_TIP = @"defaultTip";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self initializeValue];
+    [self initializeValues];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -41,7 +43,7 @@ NSString *const DEFAULT_TIP = @"defaultTip";
     // Dispose of any resources that can be recreated.
 }
 
-- (void)initializeValue
+- (void)initializeValues
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     self.defaultTipControl.selectedSegmentIndex = [defaults integerForKey:DEFAULT_TIP];
